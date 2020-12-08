@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1607411828 "/home/rose/Documents/CV/cv.tex" "/home/rose/Documents/CV/cv.pdf" "cv" 1607411828
+["pdflatex"] 1607469944 "/home/rose/Documents/CV/cv.tex" "/home/rose/Documents/CV/cv.pdf" "cv" 1607469945
   "/etc/texmf/web2c/texmf.cnf" 1601158815 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/rose/Documents/CV/cv.aux" 1607243515 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/rose/Documents/CV/cv.tex" 1607411827 6269 de993296dee3cf2edea577a578aa0430 ""
+  "/home/rose/Documents/CV/cv.aux" 1607469944 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/rose/Documents/CV/cv.tex" 1607469944 6257 2aa54db2fd02ae9e848f304b02cc2306 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -34,11 +34,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1605751409 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1605751451 8256607 e155725cb4fc0c599f58c35e90c7c5e8 ""
-  "cv.aux" 1607243515 8 a94a2480d3289e625eea47cd1b285758 ""
-  "cv.tex" 1607411827 6269 de993296dee3cf2edea577a578aa0430 ""
+  "cv.aux" 1607469944 8 a94a2480d3289e625eea47cd1b285758 ""
+  "cv.tex" 1607469944 6257 2aa54db2fd02ae9e848f304b02cc2306 ""
   "rpires.cls" 1607240919 25065 00878584ba637ae375b57ce6f6d58323 ""
   (generated)
   "cv.pdf"
   "/home/rose/Documents/CV/cv.pdf"
-  "/home/rose/Documents/CV/cv.log"
   "cv.log"
+  "/home/rose/Documents/CV/cv.log"
