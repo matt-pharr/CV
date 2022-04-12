@@ -1,9 +1,13 @@
 % Using the RPI resume template found at
 % https://www.rpi.edu/dept/arc/training/latex/resumes/
-
-\documentclass[margin]{rpires} 
+\documentclass[margin]{rpires}
 \usepackage{amsfonts}
-\setlength{\textheight}{10in} 
+\setlength{\oddsidemargin}{-0.3in}
+\setlength{\evensidemargin}{-0.3in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\resumewidth}{7in}
+\setlength{\textheight}{10in}
+\newsectionwidth{1.4in}
 \begin{document}  
 % Center the name over the entire width of resume:
 \moveleft.5\hoffset\centerline{\large\bf Matthew C. Pharr}
@@ -14,7 +18,7 @@
  \moveleft.5\hoffset\centerline{matthew.pharr@columbia.edu}
  \moveleft.5\hoffset\centerline{(410) 375-9882}
                         
-\begin{resume}                        
+\begin{resume}                       
  
 % \section{OBJECTIVE}       Acceptance to PhD Programs in Plasma Physics and Applied Mathematics.
  
@@ -25,55 +29,77 @@ Ph.D. Plasma Physics, Expected 2026 \\
 M.Phil. Plasma Physics, Expected 2025\\
 M.S. Applied Physics, Expected 2022 \\
 
+\vspace{-5mm}
 Rensselaer Polytechnic Institute, Troy, NY\\
 B.S. Physics \&  Mathematics, 2021 \\
 {\sl Summa Cum Laude.}
 
 \section{PUBLICATIONS, TALKS, AND PROCEEDINGS}
 
-\begin{itemize}
+% \begin{itemize}
 
-\item Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.}
-American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section BO06.00003: Astrophysical Turbulence and Dynamos.
+% \item Pharr M, Ebrahimi F. {\sl Azimuthal Curvature Instability in Hall-MHD plasmas.} Draft in Progress, 2022.
 
-\end{itemize}
+% \item Ebrahimi F, Pharr M. {\sl A magnetic- and spatial-curvature driven instability in a differentially rotating plasma.} Draft Submitted to Astrophysical Journal, 2022.
 
-\section{RESEARCH}      
+% \item Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.}
+% American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section BO06.00003: Astrophysical Turbulence and Dynamos.
+
+% \end{itemize}
+
+
+Pharr M, Ebrahimi F. {\sl Azimuthal Curvature Instability in Hall-MHD plasmas.} Draft in Progress, 2022.
+    
+Ebrahimi F, Pharr M. {\sl A magnetic- and spatial-curvature driven instability in a differentially rotating plasma.} Draft Submitted to Astrophysical Journal, 2022.
+    
+Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.} American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section BO06.00003: Astrophysical Turbulence and Dynamos.
+    
+
+\section{RESEARCH}
+    {\sl Graduate Research Assistant} \hfill May 2021 - Present \\
+    Columbia University Plasma Physics Lab, 
+    New York, NY\\ 
+    Supervisor: Dr. Carlos Paz-Soldan
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Model 3D fields in different coil lead configurations for DIII-D using GPEC
+    \item Future projects to be determined
+    \end{itemize}
+
     {\sl U.S. Department of Energy Research Intern} \hfill Fall 2020, Summer 2021 \\
     Princeton Plasma Physics Lab, 
-    Princeton, NJ 
+    Princeton, NJ\\ 
+    Supervisor: Dr. Fatima Ebrahimi
     \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Full time undergraduate intern at PPPL in plasma and fusion sciences.
-    \item Fall 2020: Investigate the relationship between Hall and MHD dynamo terms in the induction equation and the growth of large scale magnetic fields due to magnetorotational instability (MRI) using computational tools such as NIMROD, under the supervision of Dr. Fatima Ebrahimi. 
-    \item Summer 2021: Work as a part of the liquid gallium MRI group towards the laboratory detection of the MRI. Conduct analytic linear stability analysis as well as numerical analysis using Daedalus and SFEMaNS. 
+    \item Investigate the relationship between Hall and MHD dynamo terms in the induction equation and the growth of large scale magnetic fields due to magnetorotational instability (MRI) using NIMROD.
+    \item Write data analysis scripts for the PPPL MRI Experiment and model a new ideal MHD instability in differentially rotating plasmas (see second publication).
     \end{itemize}
 
     {\sl Undergraduate Research in Molecular Biophysics} \hfill Summer 2020, Spring 2021 \\
     Rensselaer Polytechnic Institute, 
-    Department of Mathematical Sciences, Troy, NY 
+    Department of Mathematical Sciences, Troy, NY\\
+    Supervisor: Dr. Peter Kramer
     \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Explore the efficacy of two theoretical mathematical models for the interactions between microtubule filaments through connecting
-    Kinesin-5 molecules using various Monte Carlo methods with Professor Peter Kramer.
-    \item Implement Gillespie algorithm simulations for various models in python employing use of NumPy and other libraries. 
-    \item   Expand and connect the two theores in unexplored parameter space.
+    \item Explore the efficacy of models for interactions between microtubule filaments using Monte Carlo methods.
+    \item Implement Gillespie algorithm simulations for various models in python. 
+    \item Expand and connect the two theores in unexplored parameter space.
     \end{itemize}
 
-    {\sl Personal Project in Applied Mathematics and Economics} \hfill Fall 2019 - Spring 2020
+    {\sl Project in Applied Mathematics and Economics} \hfill Fall 2019 - Spring 2020
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Investigate the development of the Lorentz curve in a free market system for various Monte-Carlo models of an economy.
-        \item Computationally implement and investigate various wealth and income distribution models.
+        \item Investigate the time evolution of Lorentz curves for Monte-Carlo models of economies.
+        \item Computationally implement/explore various wealth/income distribution models.
     \end{itemize}
 
     {\sl Mathematical Competition in Modeling} \hfill Spring 2020 \\
     Awarded Honorable Mention for Research Paper
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Formulate a model for the changing of migration patterns of Northern Atlantic Mackerel and Herring due to climate change.
-        \item Study how this will affect the Scottish fishing market for different climate change outcomes.
-        \item Produce recommendations for businesses to minimize negative impact in the format of a mathematical research paper.
+        \item Synthesize a model for the changing of migration patterns of Mackerel and Herring due to climate change.
+        \item Study how this will affect Scottish fishing markets for different climate change outcomes.
+        \item Write a research paper detailing the results of the study.
     \end{itemize}
-\newpage
+
 \section{PEDAGOGY}
-    {\sl Graduate Teaching Assistant} \hfill Fall 2021 - Present \\
+    {\sl Graduate Teaching Assistant} \hfill Fall 2021 - May 2022 \\
     Columbia University, Applied Physics and Applied Mathematics, New York, NY
     \begin{itemize}  \itemsep -2pt %reduce space between items
         \item Hold office hours for an upper undergraduate/introductory graduate course on Complex Analysis.
@@ -99,7 +125,7 @@ American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pitts
     {\sl ALAC Tutor} \hfill Fall 2019 - Spring 2020 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Tutor Physics I,II Honors I, and Honors II students in private and group settings for Rensselaer's Learning Assistance Center
+        \item Tutor Physics I, II Honors I, and Honors II students in private and group settings for Rensselaer's Learning Assistance Center
     \end{itemize}
 
     {\sl Private Tutor} \hfill Spring 2018 - Spring 2020 \\
@@ -109,7 +135,7 @@ American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pitts
     \end{itemize}
     
     
-\section{HONORS} Max Hirsch Prize
+\section{HONORS AND AWARDS} Max Hirsch Prize in Mathematics
                 \begin{itemize}
                     \item[] {\sl This prize is awarded to a Senior in the Department of Mathematical Sciences who has demonstrated outstanding ability in his or her academic work and also gives promise of outstanding success in a career in mathematical sciences}
                 \end{itemize}
@@ -125,15 +151,15 @@ American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pitts
                 Rensselaer Leadership Award 
  
 \section{SKILLS}
-Python/Conda, Java, NumPy, SciPy, Matplotlib, Linux Terminal, Matlab\\
+Python/Conda, Java, NumPy, SciPy, MatPlotLib, Linux Terminal, Matlab, \LaTeX\\
 Society of Physics Students Build Team – Demos and Outreach \\
-Competent in handling lab equipment and using basic shop machinery\\
-RPI Putnam Team - Competition in mathematical problem solving\\
+Use of vacuum technology and other plasma physics related lab equipment\\
+Use of high voltage lab equipment
 Conversational in French\\
 Excellent English Reading/Writing Skills \\
 
  
-\section{HOBBIES}         Hiking, Bouldering, Taekwondo, Media Studies, Green and LGBTQ+ Activism
+\section{HOBBIES}         Hiking, Bouldering, Media Studies, Green and LGBTQ+ Activism
  
 \end{resume} 
 \end{document}
