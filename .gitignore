@@ -1,5 +1,6 @@
-*latexmk
-*.log
-*.synctex.gz
-*.aux
-*.fls
+*
+
+!cv.tex
+!cv.pdf
+!README.md
+!rpires.cls

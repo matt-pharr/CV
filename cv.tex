@@ -1,8 +1,16 @@
 % Using the RPI resume template found at
 % https://www.rpi.edu/dept/arc/training/latex/resumes/
 \documentclass[margin]{rpires}
+% \documentclass[overlapped]{rpires}
 \usepackage{amsfonts}
 \usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \setlength{\oddsidemargin}{-0.3in}
 \setlength{\evensidemargin}{-0.3in}
 \setlength{\topmargin}{-0.5in}
@@ -18,13 +26,10 @@
 % Again, the address lines must be centered over entire width of resume:
  \moveleft.5\hoffset\centerline{matthew.pharr@columbia.edu}
  \moveleft.5\hoffset\centerline{(410) 375-9882}
-                        
+                         
 \begin{resume}                       
 
-% \section{OBJECTIVE}       Acceptance to PhD Programs in Plasma Physics and Applied Mathematics.
- 
 \section{EDUCATION}     
-
 
 \begin{tabular}{l l}
 Columbia University, New York, NY & Rensselaer Polytechnic Institute, Troy, NY\\
@@ -32,69 +37,51 @@ Ph.D. Plasma Physics, Expected 2026  & B.S. Physics \&  Mathematics, 2021 \\
 M.Phil. Plasma Physics, Expected 2025 & \sl Summa Cum Laude.\\
 M.S. Applied Physics, 2023 & {} 
 \end{tabular}
-
-% \vspace{-5mm}
-
-
-\section{PUBLICATIONS, TALKS, AND PROCEEDINGS}
-
-% \begin{itemize}
-
-% \item Pharr M, Ebrahimi F. {\sl Azimuthal Curvature Instability in Hall-MHD plasmas.} Draft in Progress, 2022.
-
-% \item Ebrahimi F, Pharr M. {\sl A magnetic- and spatial-curvature driven instability in a differentially rotating plasma.} Draft Submitted to Astrophysical Journal, 2022.
-
-% \item Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.}
-% American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section BO06.00003: Astrophysical Turbulence and Dynamos.
-
-% \end{itemize}
-
-Pharr M, Paz-Soldan C, Park J, Logan N, Gribov Y, Leuthold N. {\sl Error field source identification in early ITER plasmas.} American Physical Society, Division of Plasma Physics 2022 Annual Meeting: Spokane, Wa. Section PP11.00044: Poster Session VI: Diagnostics; Edge and Pedestal; Stability; Heating; Transport, Turbulence.
-
-Pharr M, Ebrahimi F. {\sl Magneto-Curvature Instability in Hall-MHD plasmas.} Draft in Progress, 2023.
-
-Pharr M, Ebrahimi F. {\sl Modeling Nonaxisymmetric Magneto-Curvature Instability in Taylor-Couette Experiments.} Draft in Progress, 2023.
-
-Ebrahimi, F., \& Pharr, M. (2022). {\sl A nonlocal magneto-curvature instability in a differentially rotating disk.} The Astrophysical Journal, 936(2), 145. \href{https://doi.org/10.3847/1538-4357/ac892d}{https://doi.org/10.3847/1538-4357/ac892d} 
-
-Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.} American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section BO06.00003: Astrophysical Turbulence and Dynamos.
-
-
-\section{RESEARCH}
-    {\sl Graduate Research Assistant} \hfill May 2021 - Present \\
+\section{RESEARCH \& PROJECTS}
+    \textit{Graduate Research Assistant} \hfill August 2021 - Present \\
     Columbia University Plasma Physics Lab, 
     New York, NY\\ 
-    Supervisor: Dr. Carlos Paz-Soldan
+    Advisor: Dr. Carlos Paz-Soldan, Dr. Nikolas Logan
     \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Investigate error field correction schemes for various toroidal fusion devices.
-    \item Contribute to open source physics code. 
-    \item Study linear calculation viability for error field perturbations in NSTX-U. 
+    \item {M. Pharr, N. C. Logan, C. Paz-Soldan, J. K. Park, and C. Hansen, \textit{Error field predictability and consequences for ITER}, \href{https://dx.doi.org/10.1088/1741-4326/ad7ed6}{Nucl. Fusion 64, 126025 (2024)}.}
+    \item {The MANTA Collaboration et al., \textit{MANTA: a negative-triangularity NASEM-compliant fusion pilot plant}, \href{https://iopscience.iop.org/article/10.1088/1361-6587/ad6708}{Plasma Phys. Control. Fusion 66, 105006 (2024)}.}
+    \item {C. J. Hansen, I. G. Stewart, D. Burgess, M. Pharr, S. Guizzo, F. Logak, A. O. Nelson, and C. Paz-Soldan, \textit{TokaMaker: An open-source time-dependent Grad-Shafranov tool for the design and modeling of axisymmetric fusion devices}, \href{https://www.sciencedirect.com/science/article/pii/S0010465524000341}{Computer Physics Communications 298, 109111 (2024)}.}
+    \item {C. Paz-Soldan et al., \textit{Simultaneous access to high normalized density, current, pressure, and confinement in strongly-shaped diverted negative triangularity plasmas}, \href{https://new.iopscience.iop.org/article/10.1088/1741-4326/ad69a4/meta}{Nucl. Fusion 64, 094002 (2024)}.}
+    \item {C. T. Holcomb et al., \textit{DIII-D research to provide solutions for ITER and fusion energy}, \href{https://dx.doi.org/10.1088/1741-4326/ad2fe9}{Nucl. Fusion 64, 112003 (2024)}.}
+    \item {M. Pharr, S. Frank, O. Nelson, R. Nies, and T. Rubin, \href{https://github.com/hansec/OpenPOPCON}{hansec/OpenPOPCON}, (2024). }
+    \vspace{0.5cm}
+    \item M. Pharr et al. \textit{Expected Error Fields in ITER: A full-device source model and strategies for stable operation.} American Physical Society, Division of Plasma Physics 2024 Annual Meeting: Atlanta, GA. Section PP11.00050: Research in Support of ITER.
+    \item M. Pharr et al. \textit{Error Field Predictability and Consequences for ITER.} American Physical Society, Division of Plasma Physics 2023 Annual Meeting: Denver, Co. Section PP11.00050: Poster Session VI: MHD and Stability.
+    \item M. Pharr et al. \textit{Error field source identification in early ITER plasmas.} American Physical Society, Division of Plasma Physics 2022 Annual Meeting: Spokane, Wa. Section PP11.00044: Poster Session VI: Diagnostics; Edge and Pedestal; Stability; Heating; Transport, Turbulence.
     \end{itemize}
 
-    {\sl U.S. Department of Energy Research Intern} \hfill Fall 2020, Summer 2021 \\
+    \vspace{0.5cm}
+    \textit{U.S. Department of Energy Research Intern} \hfill Fall 2020, Summer 2021 \\
     Princeton Plasma Physics Lab, 
     Princeton, NJ\\ 
-    Supervisor: Dr. Fatima Ebrahimi
+    Advisor: Dr. Fatima Ebrahimi
     \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Conduct dynamo analysis on Magnetorotational Instability (MRI) using NIMROD.
-    \item Script for PPPL MRI Experiment and model new MHD instability in differentially rotating plasmas (see publications).
+    \item {F. Ebrahimi and M. Pharr, \textit{A Nonlocal Magneto-curvature Instability in a Differentially Rotating Disk}, \href{https://dx.doi.org/10.3847/1538-4357/ac892d}{ApJ 936, 145 (2022)}.}
+    \vspace{0.5cm}
+    \item M. Pharr, F. Ebrahimi, \textit{A nonlocal Curvature-Driven Flow-Shear Instability in Low-Field Plasmas} Sherwood Fusion Theory 2023 Conference: Knoxville, TN.
+    \item M. Pharr, F. Ebrahimi, E. Blackman, \textit{Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.} American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section UO06.00014: Astrophysical Turbulence and Dynamos.
     \end{itemize}
 
-    {\sl Undergraduate Research in Computational Molecular Biophysics} \hfill Summer 2020, Spring 2021 \\
+    \vspace{0.5cm}
+    \textit{Undergraduate Research in Computational Molecular Biophysics} \hfill Summer 2020, Spring 2021 \\
     Rensselaer Polytechnic Institute, 
     Department of Mathematical Sciences, Troy, NY\\
     Supervisor: Dr. Peter Kramer
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Implement Gillespie algorithm simulations for various models in python. 
-    \end{itemize}
+    % \begin{itemize}  \itemsep -2pt %reduce space between items
+    % \end{itemize}
 
-    % {\sl Project in Applied Mathematics and Economics} \hfill Fall 2019 - Spring 2020
+    % \textit{Project in Applied Mathematics and Economics} \hfill Fall 2019 - Spring 2020
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Investigate the time evolution of Lorentz curves for Monte-Carlo models of economies.
     %     \item Computationally implement/explore various wealth/income distribution models.
     % \end{itemize}
 
-    % {\sl Mathematical Competition in Modeling} \hfill Spring 2020 \\
+    % \textit{Mathematical Competition in Modeling} \hfill Spring 2020 \\
     % Awarded Honorable Mention for Research Paper
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Synthesize a model for the changing of migration patterns of Mackerel and Herring due to climate change.
@@ -104,13 +91,13 @@ Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stab
 
 \section{PEDAGOGY}
     
-    {\sl Graduate Teaching Assistant, Intro Physics Lab Sequence} \hfill August 2022 - Present \\
-    Barnard College, Physics and Astronomy, New York, NY
+    \textit{Graduate Teaching Assistant, Intro Physics Lab Sequence} \hfill August 2022 - Present \\
+    Barnard College of Columbia University, Physics and Astronomy, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Teach introductory mechanics lab, grade lab reports.
     % \end{itemize}
 
-    {\sl Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 - May 2022 \\
+    \textit{Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 - May 2022 \\
     Columbia University, Applied Physics and Applied Mathematics, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Hold office hours for upper undergraduate/introductory graduate courses on Complex Analysis and Linear Algebra.
@@ -118,7 +105,7 @@ Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stab
     % \end{itemize}    
 
 
-    {\sl Undergraduate Facilitator} \hfill Fall 2019 - Summer 2020, Spring 2021 \\
+    \textit{Undergraduate Facilitator} \hfill Fall 2019 - Summer 2020, Spring 2021 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     \begin{itemize}  \itemsep -2pt %reduce space between items
         \item Facilitate Honors Physics I/II Lab, Electromagnetic Theory, Intro to Quantum Mech.
@@ -126,42 +113,50 @@ Pharr M, Ebrahimi F, Blackman E. {\sl Large Scale Magnetic Field Growth and Stab
         % \item Attend some courses to help answer questions.
     \end{itemize}
 
-    {\sl I-PERSIST Mentor} \hfill Fall 2019 \\
+    \textit{I-PERSIST Mentor} \hfill Fall 2019 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Run two small weekly group meetings to strengthen important problem solving skills in Physics I.
     %     \item Guide 20 new freshmen to success in their first semester.
     % \end{itemize}
 
-    {\sl ALAC Introductory Physics Tutor} \hfill Fall 2019 - Spring 2020 \\
+    \textit{ALAC Introductory Physics Tutor} \hfill Fall 2019 - Spring 2020 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Tutor Physics I, II, Honors Physics I, II students in private and group settings for Rensselaer's Learning Assistance Center.
     % \end{itemize}
 
-    {\sl Private Tutor, Math/Physics} \hfill Spring 2018 - Spring 2020 \\
-    Self-employed.
+    \textit{Private Tutor, Math/Physics} \hfill Spring 2018 - Spring 2020 \\
+    Self-employed. Took 2-4 hours per week of university-level tutoring.
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Synthesize lessons, example problems, and meet with math, computer science, and physics students regularly to assist with coursework and test preparation.
     % \end{itemize}
     
     
-\section{HONORS AND AWARDS} {\sl Rensselaer Polytechnic Institute}
+\section{HONORS \& AWARDS} 
 
-                Max Hirsch Prize in Mathematics
-                \begin{itemize}
-                    \item[] {\sl This prize is awarded to a Senior in the Department of Mathematical Sciences who has demonstrated outstanding ability in his or her academic work and also gives promise of outstanding success in a career in mathematical sciences.}
-                \end{itemize}
-                \vspace{-0.4cm}
-                J. Lawrence and Gertrude Katz Award in Physics
-                \begin{itemize} 
-                    \item[] {\sl This award is presented to the student selected as the outstanding graduating senior receiving a Bachelor of Science in Physics.}
-                \end{itemize}
-                \vspace{-0.4cm}
-                $\Sigma \Pi \Sigma$, Physics Honor Society \\
-                Rensselaer Archimedian Society (4.0 award) \\
-                Honorable Mention for Research Paper,       Mathematical Competition in Modeling \\
-                Rensselaer Leadership Award 
+\textit{ORFEAS Fusion Design Contest Award}; Columbia University, 2022
+\begin{itemize}
+    \item[] {For contributions to the Columbia/MIT team's project on negative triangularity reactor pilot plant design scoping. Awarded \$22,000 as a group.}
+\end{itemize}
+\vspace{-0.4cm}
+
+\textit{Max Hirsch Prize in Mathematics}; Rensselaer Polytechnic Institute, 2021
+\begin{itemize}
+    \item[] {This prize is awarded to a Senior in the Department of Mathematical Sciences who has demonstrated outstanding ability in his or her academic work and also gives promise of outstanding success in a career in mathematical sciences.}
+\end{itemize}
+\vspace{-0.4cm}
+
+\textit{J. Lawrence and Gertrude Katz Award in Physics}; Rensselaer Polytechnic Institute, 2021
+\begin{itemize} 
+    \item[] {This award is presented to the student selected as the outstanding graduating senior receiving a Bachelor of Science in Physics.}
+\end{itemize}
+\vspace{-0.4cm}
+
+$\Sigma \Pi \Sigma$, Physics Honor Society \\
+Rensselaer Archimedian Society (4.0 award) \\
+Honorable Mention for Research Paper,       Mathematical Competition in Modeling \\
+Rensselaer Leadership Award 
  
 \section{SKILLS}
 Python, Java, Fortran, Matlab, Linux, \LaTeX\\
@@ -172,8 +167,8 @@ Conversational in French\\%, Mandarin\\
 % Excellent English Reading/Writing Skills \\
 
  
-\section{HOBBIES}
-Hiking; Bouldering; Media Studies; Green, Queer, and Student Activism
+% \section{HOBBIES}
+% Hiking; Bouldering; Media Studies; Green, Queer, and Student Activism
  
 \end{resume} 
 \end{document}
