@@ -1,107 +1,171 @@
-% Using the RPI resume template found at
-% https://www.rpi.edu/dept/arc/training/latex/resumes/
-\documentclass[margin]{rpires}
-% \documentclass[overlapped]{rpires}
-\usepackage{amsfonts}
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{rpires} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
 \usepackage{hyperref}
 \usepackage{xcolor}
-\hypersetup{
-    colorlinks,
-    linkcolor={red!50!black},
-    citecolor={blue!50!black},
-    urlcolor={blue!80!black}
-}
-\setlength{\oddsidemargin}{-0.3in}
-\setlength{\evensidemargin}{-0.3in}
-\setlength{\topmargin}{-0.5in}
-\setlength{\resumewidth}{7in}
-\setlength{\textheight}{10in}
-\newsectionwidth{1.4in}
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \newcommand{\wideline}{\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip}
-\begin{document}  
-% Center the name over the entire width of resume:
-\moveleft.5\hoffset\centerline{\large\bf Matthew C. Pharr}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{matthew.pharr@columbia.edu}
- \moveleft.5\hoffset\centerline{(410) 375-9882}
-                         
-\begin{resume}                       
+\setlength{\headsep}{12pt}  % space between header and text
+\setlength{\headheight}{12pt} % allow room for 2-line header
+% \setlength{\voffset}{1cm} % start text higher on the page
+\setlength{\textheight}{9.5in} % increase text height to fit more on a page
 
-\section{EDUCATION}     
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it M. Pharr \it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
 
-\begin{tabular}{l l}
-Columbia University, New York, NY & Rensselaer Polytechnic Institute, Troy, NY\\
-Ph.D. Plasma Physics, Expected 2026  & B.S. Physics \&  Mathematics, 2021 \\
-M.Phil. Plasma Physics, 2025 & \sl Summa Cum Laude.\\
-M.S. Applied Physics, 2023 & {} 
-\end{tabular}
-\section{RESEARCH \& PROJECTS}
-    \textit{Graduate Research Assistant} \hfill August 2021 - Present \\
-    Columbia University Plasma Physics Lab, 
-    New York, NY\\ 
-    Advisor: Dr. Carlos Paz-Soldan, Dr. Nikolas Logan
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item {M. Pharr, N. C. Logan, C. Paz-Soldan, J. K. Park, and C. Hansen, \textit{Error field predictability and consequences for ITER}, \href{https://dx.doi.org/10.1088/1741-4326/ad7ed6}{Nucl. Fusion 64, 126025 (2024)}.}
-    \item {M. Pharr, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Metrics for quantifying resonant drive in ideal and extended MHD}, \href{}{Planned for submission 2025.}}
-    \item {M. Pharr, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Quantifying resonant drive in kinetically relaxed tokamak perturbed equilibria}, \href{}{Planned for submission 2025.}}\vspace{0.5cm}
+\begin{document}
+\thispagestyle{empty} % this page has no header  
+\name{\LARGE MATTHEW C. PHARR\\[12pt]}% the \\[12pt] adds a blank line after name
+
+\begin{resume}
+ 
+\wideline
+\centerline{matthew.pharr@columbia.edu; (410) 375-9882}
+\centerline{600 W 125th St, \#8D, New York, NY 10027, USA}
+\vspace{-0.2cm}
+\section{EDUCATION}
+\vspace{0.3cm}\wideline
+\vspace{-0.5cm}
+
+\begin{center}
+  \begin{tabular}{l l}
+  {\textsl{Columbia University}}, New York, NY & \textsl{Rensselaer Polytechnic Institute}, Troy, NY\\
+  Ph.D. Plasma Physics, Expected 2026  & B.S. Physics \&  Mathematics, 2021 \\
+  M.Phil. Plasma Physics, 2025 & \sl Summa Cum Laude.\\
+  M.S. Applied Physics, 2023 & {} 
+  \end{tabular}
+\end{center}
+
+\section{PUBLICATIONS}
+\vspace{0.3cm}\wideline
+% \vspace{-0.5cm}
+
+\begin{itemize}  \itemsep -2pt %reduce space between items
+    \item {{\bf M. Pharr}, \textit{Quantifying and Mitigating Risk of Error Field Penetration in Non-Axisymmetric Tokamak Plasmas}, Ph.D. Dissertation, Columbia University (2026).}
+    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Metrics for quantifying resonant drive in ideal and extended MHD}, \href{}{Planned for submission 2025.}}
+    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Quantifying resonant drive in kinetically relaxed tokamak perturbed equilibria}, \href{}{Planned for submission 2025.}}
+    \item {{\bf M. Pharr}, N. C. Logan, C. Paz-Soldan, J. K. Park, and C. Hansen, \textit{Error field predictability and consequences for ITER}, \href{https://dx.doi.org/10.1088/1741-4326/ad7ed6}{Nucl. Fusion 64, 126025 (2024)}.}
+    \item {F. Ebrahimi and {\bf M. Pharr}, \textit{A Nonlocal Magneto-curvature Instability in a Differentially Rotating Disk}, \href{https://dx.doi.org/10.3847/1538-4357/ac892d}{ApJ 936, 145 (2022)}.}\vspace{0.5cm}
+    \item {N. Logan et al., \textit{SPARC Tokamak Error Field Expectations and Physics-Based Correction Coil Design}, \href{}{Planned for submission to Nuclear Fusion, 2025.}}
     \item {X. Bai et al., \textit{Time variation of error field correction in ITER}, submitted to Plasma Physics and Controlled Fusion (2025).}
     \item {The MANTA Collaboration et al., \textit{MANTA: a negative-triangularity NASEM-compliant fusion pilot plant}, \href{https://iopscience.iop.org/article/10.1088/1361-6587/ad6708}{Plasma Phys. Control. Fusion 66, 105006 (2024)}.}
     \item {C. J. Hansen, I. G. Stewart, D. Burgess, M. Pharr, S. Guizzo, F. Logak, A. O. Nelson, and C. Paz-Soldan, \textit{TokaMaker: An open-source time-dependent Grad-Shafranov tool for the design and modeling of axisymmetric fusion devices}, \href{https://www.sciencedirect.com/science/article/pii/S0010465524000341}{Computer Physics Communications 298, 109111 (2024)}.}
     \item {C. Paz-Soldan et al., \textit{Simultaneous access to high normalized density, current, pressure, and confinement in strongly-shaped diverted negative triangularity plasmas}, \href{https://new.iopscience.iop.org/article/10.1088/1741-4326/ad69a4/meta}{Nucl. Fusion 64, 094002 (2024)}.}
     \item {C. T. Holcomb et al., \textit{DIII-D research to provide solutions for ITER and fusion energy}, \href{https://dx.doi.org/10.1088/1741-4326/ad2fe9}{Nucl. Fusion 64, 112003 (2024)}.}
     \item {S. Guizzo et al, \textit{Electromagnetic System Conceptual Design for a Negative Triangularity Tokamak}, \href{ https://doi.org/10.48550/arXiv.2501.14682}{ArXiv, submitted to Fusion Engineering and Design (2024)}.}
-    \item {M. Pharr, S. Frank, O. Nelson, R. Nies, and T. Rubin, \href{https://github.com/hansec/OpenPOPCON}{hansec/OpenPOPCON}, (2024). }
-    \item {J. Halpern, M. Pharr, N. Logan, et al., \href{https://github.com/OpenFUSIONToolkit/JPEC}{OpenFUSIONToolkit/JPEC}, (2025). }
-    \vspace{0.5cm}
+\end{itemize}
+
+\section{PRESENTATIONS \& CONFERENCE PROCEEDINGS}
+\vspace{0.3cm}\wideline
+\begin{itemize}  \itemsep -2pt %reduce space between items
+  \vspace{0.5cm}
     \item M. Pharr et al. \textit{Quantifying the Resonant Drive for Magnetic Islands in Perturbed Ideal, Resistive, and Kinetic MHD Equilibria.} American Physical Society, Division of Plasma Physics 2025 Annual Meeting: Long Beach, CA. Section GO05.00007: MFE: MHD.
+    \item M. Pharr et al. \textit{Quantifying the Resonant Drive for Magnetic Islands in Perturbed Ideal, Resistive, and Kinetic MHD Equilibria.} 29th US-Japan Joint Workshop on MHD Stability Control: Princeton, NJ, 2025.
+    \item M. Pharr et al. \textit{Expected Error Fields in ITER: A full-device source model and strategies for stable operation.} ITER International Summer School 2025: Aix-en-Provence, France.
     \item M. Pharr et al. \textit{Expected Error Fields in ITER: A full-device source model and strategies for stable operation.} American Physical Society, Division of Plasma Physics 2024 Annual Meeting: Atlanta, GA. Section PP11.00050: Research in Support of ITER.
     \item M. Pharr et al. \textit{Error Field Predictability and Consequences for ITER.} American Physical Society, Division of Plasma Physics 2023 Annual Meeting: Denver, Co. Section PP11.00050: Poster Session VI: MHD and Stability.
-    \item M. Pharr et al. \textit{Error field source identification in early ITER plasmas.} American Physical Society, Division of Plasma Physics 2022 Annual Meeting: Spokane, Wa. Section PP11.00044: Poster Session VI: Diagnostics; Edge and Pedestal; Stability; Heating; Transport, Turbulence.
-    \end{itemize}
-
-    \vspace{0.5cm}
-    \textit{U.S. Department of Energy Research Intern} \hfill Fall 2020, Summer 2021 \\
-    Princeton Plasma Physics Lab, 
-    Princeton, NJ\\ 
-    Advisor: Dr. Fatima Ebrahimi
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item {F. Ebrahimi and M. Pharr, \textit{A Nonlocal Magneto-curvature Instability in a Differentially Rotating Disk}, \href{https://dx.doi.org/10.3847/1538-4357/ac892d}{ApJ 936, 145 (2022)}.}
-    \vspace{0.5cm}
     \item M. Pharr, F. Ebrahimi, \textit{A nonlocal Curvature-Driven Flow-Shear Instability in Low-Field Plasmas} Sherwood Fusion Theory 2023 Conference: Knoxville, TN.
+    \item M. Pharr et al. \textit{Error field source identification in early ITER plasmas.} American Physical Society, Division of Plasma Physics 2022 Annual Meeting: Spokane, Wa. Section PP11.00044: Poster Session VI: Diagnostics; Edge and Pedestal; Stability; Heating; Transport, Turbulence.
     \item M. Pharr, F. Ebrahimi, E. Blackman, \textit{Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.} American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section UO06.00014: Astrophysical Turbulence and Dynamos.
-    \end{itemize}
+\end{itemize}
 
-    \vspace{0.5cm}
-    \textit{Undergraduate Research in Computational Molecular Biophysics} \hfill Summer 2020, Spring 2021 \\
-    Rensselaer Polytechnic Institute, 
-    Department of Mathematical Sciences, Troy, NY\\
-    Supervisor: Dr. Peter Kramer
+\section{HONORS \& AWARDS} 
+
+\vspace{0.3cm}\wideline
+
+\textit{ORFEAS Fusion Design Contest Award}; Columbia University \hfill 2022
+\begin{itemize}
+    \item[] {For contributions to the Columbia/MIT team's project on negative triangularity reactor pilot plant design scoping. Awarded \$22,000 as a group.}
+\end{itemize}
+\vspace{-0.4cm}
+
+\textit{Max Hirsch Prize in Mathematics}; Rensselaer Polytechnic Institute \hfill 2021
+\begin{itemize}
+    \item[] {This prize is awarded to a Senior in the Department of Mathematical Sciences who has demonstrated outstanding ability in his or her academic work and also gives promise of outstanding success in a career in mathematical sciences.}
+\end{itemize}
+\vspace{-0.4cm}
+
+\textit{J. Lawrence and Gertrude Katz Award in Physics}; Rensselaer Polytechnic Institute \hfill 2021
+\begin{itemize} 
+    \item[] {This award is presented to the student selected as the outstanding graduating senior receiving a Bachelor of Science in Physics.}
+\end{itemize}
+\vspace{-0.4cm}
+
+$\Sigma \Pi \Sigma$, Undergraduate Physics Honor Society \hfill 2021 \\
+Rensselaer Archimedian Society (4.0/4.0 GPA award)\hfill 2019 \\
+Honorable Mention for Research Paper,       Mathematical Competition in Modeling \hfill 2020 \\
+Rensselaer Leadership Award \hfill 2018
+
+
+\section{RESEARCH \& PROJECTS}
+\vspace{0.3cm}\wideline
+\textit{Graduate Research Assistant, Columbia University} \hfill August 2021 - Present \\
+Department of Applied Physics and Applied Mathematics, New York, NY \\
+Advisor: Dr. Carlos Paz-Soldan, Dr. Nikolas Logan. 
+\begin{itemize}
+  \item {Research in theoretical and computational plasma physics, focusing 3D perturbations of tokamak equilibria, error field effects and its induced risk, and MHD stability.}
+  \item {Created error field source model for ITER, and used it to predict the risk of error field penetration in ITER's baseline scenario. Used this model to propose a novel method for ensuring extrapolability of error field measurements from low to high beta.}
+  \item {Contributions to the MANTA project, a joint Columbia/MIT negative triangularity pilot plant design study. Worked on integrated modeling of plasma equilibria, transport, and 0D systems modeling.}
+  \item {Development and application of computational tools, including: \href{https://github.com/PrincetonUniversity/GPEC}{GPEC}, a fast linear perturbed equilibrium suite, including sub-modules DCON and its asymptotic matching code, RDCON/RMATCH, as well as an in-progress \href{https://github.com/OpenFUSIONToolkit/JPEC}{Julia-based modernization}; \href{https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit}{Tokamaker}, a flexible, open-source Grad-Shafranov solver for Tokamak and Dipole equilibria; \href{https://github.com/hansec/OpenPOPCON}{OpenPOPCON}, an open-source 0D tokamak systems code that has been used for scoping the MANTA and CENTUAR tokamak designs, as well as in consultation with fusion startups.}
+  \item {Work for the SPARC MHD team, including maintaining and developing its total error field source model, giving feedback on iterative coil design, and predicting time-dependent risk of error field penetration. Developed a module for the \href{https://arxiv.org/html/2509.10244v1}{POPSIM code}, a plasma control system simulator, to include effects of time-dependent error fields and their driven tearing modes and penetration risks.}
+  \item {Attended MIT CPS-FR Computational Summer School, 2023.}
+\end{itemize}
+
+\textit{SULI Intern, Princeton Plasma Physics Laboratory} \hfill Fall 2020 - Summer 2021 \\
+Theory Department, Princeton, NJ \\
+Supervisor: Dr. Fatima Ebrahimi.
+\begin{itemize}
+  \item {Studied large-scale magnetic field growth and stability in Hall-MHD simulations of quasi-Keplerian plasma flows, with applications to astrophysical accretion disks.}
+  \item {Used the extended MHD code NIMROD to perform linear and nonlinear simulations of magnetized plasmas in cylindrical geometry.}
+  \item {Discovered a new family of more global solutions to the flow-driven Magneto-Rotational Instability (MRI) through a higherarchy of models, from a new fast linear eigenvalue solver to full 3D nonlinear simulations on large-scale computing clusters.}
+\end{itemize}
+
+\textit{Undergraduate Research Assistant, Rensselaer Polytechnic Institute} \hfill Summer 2020 - Spring 2021 \\
+Department of Mathematical Sciences, Troy, NY \\
+Supervisors: Dr. Peter Kramer, Dr. Scott Forth.
+\begin{itemize}
+  \item {Studied the application of stochastic methods to the modeling of complex biological systems, including meiotic spindle assembly.}
+  \item {Used python to implement a computational statistical model of microtubule dynamics, and performed data analysis and visualization.}
+\end{itemize}
 
 \section{PEDAGOGY}
+
+\vspace{0.3cm}\wideline
     
-    \textit{Graduate Teaching Assistant, Intro Physics Lab Sequence} \hfill August 2022 - Present \\
+    \textit{Graduate Teaching Assistant, Intro Physics Lab Sequence} \hfill Fall 2022 - Present \\
     Barnard College of Columbia University, Physics and Astronomy, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Teach introductory mechanics lab, grade lab reports.
     % \end{itemize}
+    \vspace{-0.1cm}
+    
+    \textit{Senior Graduate Mentor, Fusion Reactor Design} \hfill Fall 2024 \\
+    Columbia University, Applied Physics and Applied Mathematics, New York, NY
+    \vspace{-0.1cm}
 
-    \textit{Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 - May 2022 \\
+    \textit{Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 - Spring 2022 \\
     Columbia University, Applied Physics and Applied Mathematics, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Hold office hours for upper undergraduate/introductory graduate courses on Complex Analysis and Linear Algebra.
     %     \item Grade Homework Assignments. 
     % \end{itemize}    
+    \vspace{-0.1cm}
 
     \textit{Undergraduate Facilitator} \hfill Fall 2019 - Summer 2020, Spring 2021 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Facilitate Honors Physics I/II Lab, Electromagnetic Theory, Intro to Quantum Mech.
-        % \item Hold weekly office hours.
-        % \item Attend some courses to help answer questions.
-    \end{itemize}
+    % \begin{itemize}  \itemsep -2pt %reduce space between items
+    %     \item Facilitate Honors Physics I/II Lab, Electromagnetic Theory, Intro to Quantum Mech.
+    %     % \item Hold weekly office hours.
+    %     % \item Attend some courses to help answer questions.
+    % \end{itemize}
+    \vspace{-0.1cm}
 
     \textit{I-PERSIST Mentor} \hfill Fall 2019 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
@@ -109,58 +173,39 @@ M.S. Applied Physics, 2023 & {}
     %     \item Run two small weekly group meetings to strengthen important problem solving skills in Physics I.
     %     \item Guide 20 new freshmen to success in their first semester.
     % \end{itemize}
+    \vspace{-0.1cm}
 
     \textit{ALAC Introductory Physics Tutor} \hfill Fall 2019 - Spring 2020 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Tutor Physics I, II, Honors Physics I, II students in private and group settings for Rensselaer's Learning Assistance Center.
     % \end{itemize}
+    \vspace{-0.1cm}
 
     \textit{Private Tutor, Math/Physics} \hfill Spring 2018 - Spring 2020 \\
     Self-employed. Took 2-4 hours per week of university-level tutoring.
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Synthesize lessons, example problems, and meet with math, computer science, and physics students regularly to assist with coursework and test preparation.
     % \end{itemize}
-    
-    
-\section{HONORS \& AWARDS} 
 
-\textit{ORFEAS Fusion Design Contest Award}; Columbia University, 2022
-\begin{itemize}
-    \item[] {For contributions to the Columbia/MIT team's project on negative triangularity reactor pilot plant design scoping. Awarded \$22,000 as a group.}
-\end{itemize}
-\vspace{-0.4cm}
-
-\textit{Max Hirsch Prize in Mathematics}; Rensselaer Polytechnic Institute, 2021
-\begin{itemize}
-    \item[] {This prize is awarded to a Senior in the Department of Mathematical Sciences who has demonstrated outstanding ability in his or her academic work and also gives promise of outstanding success in a career in mathematical sciences.}
-\end{itemize}
-\vspace{-0.4cm}
-
-\textit{J. Lawrence and Gertrude Katz Award in Physics}; Rensselaer Polytechnic Institute, 2021
-\begin{itemize} 
-    \item[] {This award is presented to the student selected as the outstanding graduating senior receiving a Bachelor of Science in Physics.}
-\end{itemize}
-\vspace{-0.4cm}
-
-$\Sigma \Pi \Sigma$, Physics Honor Society \\
-Rensselaer Archimedian Society (4.0 GPA award) \\
-Honorable Mention for Research Paper,       Mathematical Competition in Modeling \\
-Rensselaer Leadership Award 
- 
 \section{SKILLS}
-Python, Java, Fortran, Matlab, Linux, \LaTeX\\
-% Society of Physics Students Build Team – Demos and Outreach \\
+\vspace{0.3cm}\wideline
+Python, Julia, Fortran, Matlab, Linux, git, \LaTeX\\
+OpenMP, MPI parallel computing\\
+Application of Neural Networks and Machine Learning to Physics Problems\\
+High Performance Computing \\
+IT and Computer Networking \\
 Use of vacuum technology and other plasma physics related lab equipment\\
 Use of high voltage lab equipment\\
-Native English, Conversational French\\
-% Excellent English Reading/Writing Skills \\
-
-% \section{HOBBIES}
-% Hiking; Bouldering; Media Studies; Green, Queer, and Student Activism
+Native English, B2 French, Basic Italian, Mandarin\\
  
 \end{resume} 
+
 \end{document}
+
+
+
+
 
 
 
