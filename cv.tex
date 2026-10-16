@@ -6,8 +6,17 @@
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \usepackage{fancyhdr}  % use this package to get a 2 line header
-\usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{linkblue}{RGB}{0,70,160}
+\hypersetup{
+    colorlinks=true,      % color the link text instead of drawing boxes around it
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    citecolor=linkblue,
+    pdftitle={Matthew C. Pharr -- Curriculum Vitae},
+    pdfauthor={Matthew C. Pharr},
+}
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \newcommand{\wideline}{\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip \vspace{-0.1cm}}
 \setlength{\headsep}{12pt}  % space between header and text
@@ -22,16 +31,15 @@
 
 \begin{document}
 \thispagestyle{empty} % this page has no header  
-\name{\LARGE MATTHEW C. PHARR\\[12pt]}% the \\[12pt] adds a blank line after name
+\name{\Large MATTHEW C. PHARR\\[12pt]}% the \\[12pt] adds a blank line after name
 
 \begin{resume}
  
 \wideline
-\centerline{matthew.pharr@columbia.edu; (410) 375-9882}
-\centerline{600 W 125th St, \#8D, New York, NY 10027, USA}
+\centerline{matthew.pharr@iter.org; +33 7 72 59 67 14}
+\centerline{6 Rue Chastel, Aix-en-Provence 13100, France}
 
-Graduating doctoral student interested in plasma physics, fusion reactor design, and scientific computing.
-
+% This is where a headline goes if I am to be including one
 \vspace{-0.2cm}
 \section{EDUCATION}
 \vspace{0.2cm}\wideline
@@ -40,8 +48,8 @@ Graduating doctoral student interested in plasma physics, fusion reactor design,
 \begin{center}
   \begin{tabular}{l l}
   {\textsl{Columbia University}}, New York, NY & \textsl{Rensselaer Polytechnic Institute}, Troy, NY\\
-  Ph.D. Plasma Physics, Expected 2026  & B.S. Physics \&  Mathematics, 2021 \\
-  M.Phil. Plasma Physics, 2025 & \sl Summa Cum Laude.\\
+  Ph.D. Applied Physics, 2026  & B.S. Physics \&  Mathematics, 2021 \\
+  M.Phil. Applied Physics, 2025 & \textsl{Summa Cum Laude}\\
   M.S. Applied Physics, 2023 & {} 
   \end{tabular}
 \end{center}
@@ -51,63 +59,79 @@ Graduating doctoral student interested in plasma physics, fusion reactor design,
 % \vspace{-0.5cm}
 
 \begin{itemize}  \itemsep -2pt %reduce space between items
-    %\item {{\bf M. Pharr}, \textit{Quantifying and Mitigating Risk of Error Field Penetration in Non-Axisymmetric Tokamak Plasmas}, Ph.D. Dissertation, Columbia University (2026).}
-    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Metrics for quantifying resonant drive in ideal and extended MHD}, \href{}{Planned for submission 2025.}}
-    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Quantifying resonant drive in kinetically relaxed tokamak perturbed equilibria}, \href{}{Planned for submission 2025.}}
-    \item {{\bf M. Pharr}, N. C. Logan, C. Paz-Soldan, J. K. Park, and C. Hansen, \textit{Error field predictability and consequences for ITER}, \href{https://dx.doi.org/10.1088/1741-4326/ad7ed6}{Nucl. Fusion 64, 126025 (2024)}.}
-    \item {F. Ebrahimi and {\bf M. Pharr}, \textit{A Nonlocal Magneto-curvature Instability in a Differentially Rotating Disk}, \href{https://dx.doi.org/10.3847/1538-4357/ac892d}{ApJ 936, 145 (2022)}.}\vspace{0.5cm}
-    \item {N. Logan et al., \textit{SPARC Tokamak Error Field Expectations and Physics-Based Correction Coil Design}, \href{}{Planned for submission to Nuclear Fusion, 2025.}}
-    \item {X. Bai et al., \textit{Time variation of error field correction in ITER}, submitted to Plasma Physics and Controlled Fusion (2025).}
-    \item {The MANTA Collaboration et al., \textit{MANTA: a negative-triangularity NASEM-compliant fusion pilot plant}, \href{https://iopscience.iop.org/article/10.1088/1361-6587/ad6708}{Plasma Phys. Control. Fusion 66, 105006 (2024)}.}
-    \item {C. J. Hansen et al., \textit{TokaMaker: An open-source time-dependent Grad-Shafranov tool for the design and modeling of axisymmetric fusion devices}, \href{https://www.sciencedirect.com/science/article/pii/S0010465524000341}{Computer Physics Communications 298, 109111 (2024)}.}
-    \item {C. Paz-Soldan et al., \textit{Simultaneous access to high normalized density, current, pressure, and confinement in strongly-shaped diverted negative triangularity plasmas}, \href{https://new.iopscience.iop.org/article/10.1088/1741-4326/ad69a4/meta}{Nucl. Fusion 64, 094002 (2024)}.}
-    \item {C. T. Holcomb et al., \textit{DIII-D research to provide solutions for ITER and fusion energy}, \href{https://dx.doi.org/10.1088/1741-4326/ad2fe9}{Nucl. Fusion 64, 112003 (2024)}.}
-    \item {S. Guizzo et al, \textit{Electromagnetic System Conceptual Design for a Negative Triangularity Tokamak}, \href{ https://doi.org/10.48550/arXiv.2501.14682}{ArXiv, submitted to Fusion Engineering and Design (2024)}.}
+    % \item {{\bf M. Pharr}, \textit{Quantifying and Mitigating Risk of Error Field Penetration in Non-Axisymmetric Tokamak Plasmas}, Ph.D. Dissertation, Columbia University (2026).}
+    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Resonant and non-resonant error field effects in drift-kinetically perturbed tokamak equilibria}, Manuscript in preparation (2026).}
+    \item {{\bf M. Pharr}, E. Bursch, N. C. Logan, P. Lunia, J. K. Park, and C. Paz-Soldan, \textit{Coordinate-invariant flux-surface Fourier analysis in tokamaks}, \href{https://doi.org/10.1063/5.0346311}{Phys. Plasmas 33, 092503 (2026)}.}
+    \item {{\bf M. Pharr}, N. C. Logan, J. K. Park, and C. Paz-Soldan, \textit{Quantifying resonant drive in resistive perturbed tokamak equilibria}, \href{https://doi.org/10.1088/1741-4326/ae7616}{Nucl. Fusion 66, 086035 (2026)}.}
+    \item {{\bf M. Pharr}, N. C. Logan, C. Paz-Soldan, J. K. Park, and C. J. Hansen, \textit{Error field predictability and consequences for ITER}, \href{https://doi.org/10.1088/1741-4326/ad7ed6}{Nucl. Fusion 64, 126025 (2024)}.}
+    \item {F. Ebrahimi and {\bf M. Pharr}, \textit{A nonlocal magneto-curvature instability in a differentially rotating disk}, \href{https://doi.org/10.3847/1538-4357/ac892d}{Astrophys. J. 936, 145 (2022)}.}\vspace{0.5cm}
+    \item {N. C. Logan et al., \textit{Unification and optimization of the Generalized Perturbed Equilibrium Code}, Manuscript in preparation (2026).}
+    \item {S. Weber et al., \textit{Fast and numerically robust error-field response from matrix Riccati integration}, Manuscript in preparation (2026).}
+    \item {E. Bursch et al., \textit{Improved $n=1$ empirical error field penetration threshold scaling with Ohmic and L-mode conventional tokamak plasma discharges}, \href{https://doi.org/10.48550/arXiv.2604.27317}{Submitted to Plasma Phys. Control. Fusion (2026)}.}
+    \item {S. Freiberger et al., \textit{Compact experimental negative triangularity reactor (CENTAUR): a design study for a compact, affordable breakeven tokamak}, \href{https://doi.org/10.1088/1361-6587/ae9eea}{Plasma Phys. Control. Fusion 68, 095025 (2026)}.}
+    \item {N. C. Logan et al., \textit{SPARC tokamak error field expectations and physics-based correction coil design}, \href{https://doi.org/10.1088/1741-4326/ae6086}{Nucl. Fusion 66, 066003 (2026)}.}
+    \item {X. Bai et al., \textit{Time variation of error field correction in ITER}, \href{https://doi.org/10.1088/1361-6587/adfd81}{Plasma Phys. Control. Fusion 67, 095013 (2025)}.}
+    \item {S. Guizzo et al., \textit{Electromagnetic system conceptual design for a negative triangularity tokamak}, \href{https://doi.org/10.1016/j.fusengdes.2025.115257}{Fusion Eng. Des. 219, 115257 (2025)}.}
+    \item {The MANTA Collaboration et al., \textit{MANTA: a negative-triangularity NASEM-compliant fusion pilot plant}, \href{https://doi.org/10.1088/1361-6587/ad6708}{Plasma Phys. Control. Fusion 66, 105006 (2024)}.}
+    \item {C. J. Hansen et al., \textit{TokaMaker: an open-source time-dependent Grad-Shafranov tool for the design and modeling of axisymmetric fusion devices}, \href{https://doi.org/10.1016/j.cpc.2024.109111}{Comput. Phys. Commun. 298, 109111 (2024)}.}
+    \item {C. Paz-Soldan et al., \textit{Simultaneous access to high normalized density, current, pressure, and confinement in strongly-shaped diverted negative triangularity plasmas}, \href{https://doi.org/10.1088/1741-4326/ad69a4}{Nucl. Fusion 64, 094002 (2024)}.}
+    \item {C. T. Holcomb et al., \textit{DIII-D research to provide solutions for ITER and fusion energy}, \href{https://doi.org/10.1088/1741-4326/ad2fe9}{Nucl. Fusion 64, 112003 (2024)}.}
 \end{itemize}
 
 \section{RESEARCH \& PROJECTS}
 \vspace{0.2cm}\wideline
-\textit{Graduate Research Assistant, Columbia University} \hfill August 2021 - Present \\
-Department of Applied Physics and Applied Mathematics, New York, NY \\
-Advisor: Dr. Carlos Paz-Soldan, Dr. Nikolas Logan. 
+\textit{Monaco Postdoctoral Fellow, ITER Organization} \hfill October 2026 -- Present \\
+Science Division \\
+Supervisor: Dr. Simon Mcintosh.
 \begin{itemize}
-  \item {Research in theoretical and computational plasma physics, focusing 3D perturbations of tokamak equilibria, error field effects and its induced risk, and MHD stability.}
-  \item {Created error field source model for ITER, and used it to predict the risk of error field penetration in ITER's baseline scenario. Used this model to propose a novel method for ensuring extrapolability of error field measurements from low to high beta.}
-  \item {Contributions to the MANTA project, a joint Columbia/MIT negative triangularity pilot plant design study. Worked on integrated modeling of plasma equilibria, transport, and 0D systems modeling.}
-  \item {Development and application of computational tools, including: \href{https://github.com/PrincetonUniversity/GPEC}{GPEC}, a fast linear perturbed equilibrium suite, including sub-modules DCON and its asymptotic matching code, RDCON/RMATCH, as well as an in-progress \href{https://github.com/OpenFUSIONToolkit/JPEC}{Julia-based modernization}; \href{https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit}{Tokamaker}, a flexible, open-source Grad-Shafranov solver for Tokamak and Dipole equilibria; \href{https://github.com/hansec/OpenPOPCON}{OpenPOPCON}, an open-source 0D tokamak systems code that has been used for scoping the MANTA and CENTUAR tokamak designs, as well as in consultation with fusion startups.}
-  \item {Work for the SPARC MHD team, including maintaining and developing its total error field source model, giving feedback on iterative coil design, and predicting time-dependent risk of error field penetration. Developed a module for the \href{https://arxiv.org/html/2509.10244v1}{POPSIM code}, a plasma control system simulator, to include effects of time-dependent error fields and their driven tearing modes and penetration risks.}
+  \item {Apply linear MHD to set installation tolerances for PF coils.}
+  \item {Develop a holistic resonant and nonresonant error field correction strategy for ITER.}
+\end{itemize}
+
+\textit{Graduate Research Assistant, Columbia University} \hfill August 2021 -- August 2026 \\
+Department of Applied Physics and Applied Mathematics, New York, NY \\
+Advisors: Dr. Carlos Paz-Soldan, Dr. Nikolas Logan.
+\begin{itemize}
+  \item {Conducted research in theoretical and computational plasma physics, focusing on 3D perturbations of tokamak equilibria, error field effects and their induced risks, and MHD stability.}
+  \item {Created an error field source model for ITER, and used it to predict the risk of error field penetration in ITER's baseline scenario. Used this model to propose a novel method for ensuring extrapolability of error field measurements from low to high beta.}
+  \item {Developed methods for quantifying the resonant drive of magnetic islands in non-ideal perturbed tokamak equilibria.}
+  \item {Contributed to the MANTA project, a joint Columbia/MIT negative triangularity pilot plant design study. Worked on integrated modeling of plasma equilibria, transport, and 0D systems modeling.}
+  \item {Developed and applied computational tools, including: \href{https://github.com/PrincetonUniversity/GPEC}{GPEC}, a fast linear perturbed equilibrium suite, including sub-modules DCON and its asymptotic matching code, RDCON/RMATCH, as well as its \href{https://github.com/OpenFUSIONToolkit/GPEC}{Julia-based modernization}; \href{https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit}{TokaMaker}, a flexible, open-source Grad-Shafranov solver for tokamak and dipole equilibria; \href{https://github.com/hansec/OpenPOPCON}{OpenPOPCON}, an open-source 0D tokamak systems code that has been used for scoping the MANTA and CENTAUR tokamak designs, as well as pedagogically and in consultation with fusion startups.} %TODO: Update this list with more recent work
+  \item {Worked for the SPARC MHD team, including maintaining and developing its total error field source model, giving feedback on iterative coil design, and predicting time-dependent risk of error field penetration. Developed a module for the \href{https://arxiv.org/abs/2509.10244}{POPSIM code}, a plasma control system simulator, to include effects of time-dependent error fields and their driven tearing modes and penetration risks.}
   \item {Attended MIT CPS-FR Computational Summer School, 2023.}
 \end{itemize}
 
-\textit{SULI Intern, Princeton Plasma Physics Laboratory} \hfill Fall 2020 - Summer 2021 \\
+\textit{SULI Intern, Princeton Plasma Physics Laboratory} \hfill Fall 2020 -- Summer 2021 \\
 Theory Department, Princeton, NJ \\
 Supervisor: Dr. Fatima Ebrahimi.
 \begin{itemize}
   \item {Studied large-scale magnetic field growth and stability in Hall-MHD simulations of quasi-Keplerian plasma flows, with applications to astrophysical accretion disks.}
   \item {Used the extended MHD code NIMROD to perform linear and nonlinear simulations of magnetized plasmas in cylindrical geometry.}
-  \item {Discovered a new family of more global solutions to the flow-driven Magneto-Rotational Instability (MRI) through a higherarchy of models, from a new fast linear eigenvalue solver to full 3D nonlinear simulations on large-scale computing clusters.}
+  \item {Discovered a new family of more global solutions to the flow-driven magnetorotational instability (MRI) through a hierarchy of models, from a new fast linear eigenvalue solver to full 3D nonlinear simulations on large-scale computing clusters.}
 \end{itemize}
 
-\textit{Undergraduate Research Assistant, Rensselaer Polytechnic Institute} \hfill Summer 2020 - Spring 2021 \\
+\textit{Undergraduate Research Assistant, Rensselaer Polytechnic Institute} \hfill Summer 2020 -- Spring 2021 \\
 Department of Mathematical Sciences, Troy, NY \\
 Supervisors: Dr. Peter Kramer, Dr. Scott Forth.
 \begin{itemize}
   \item {Studied the application of stochastic methods to the modeling of complex biological systems, including meiotic spindle assembly.}
-  \item {Used python to implement a computational statistical model of microtubule dynamics, and performed data analysis and visualization.}
+  \item {Used Python to implement a computational statistical model of microtubule dynamics, and performed data analysis and visualization.}
 \end{itemize}
 
 \section{PRESENTATIONS \& CONFERENCE PROCEEDINGS}
 \vspace{0.2cm}\wideline
 \begin{itemize}  \itemsep -2pt %reduce space between items
-  \vspace{0.5cm}
-    \item M. Pharr et al. \textit{Quantifying the Resonant Drive for Magnetic Islands in Perturbed Ideal, Resistive, and Kinetic MHD Equilibria.} American Physical Society, Division of Plasma Physics 2025 Annual Meeting: Long Beach, CA. Section GO05.00007: MFE: MHD.
-    \item M. Pharr et al. \textit{Quantifying the Resonant Drive for Magnetic Islands in Perturbed Ideal, Resistive, and Kinetic MHD Equilibria.} 29th US-Japan Joint Workshop on MHD Stability Control: Princeton, NJ, 2025.
-    \item M. Pharr et al. \textit{Expected Error Fields in ITER: A full-device source model and strategies for stable operation.} ITER International Summer School 2025: Aix-en-Provence, France.
-    \item M. Pharr et al. \textit{Expected Error Fields in ITER: A full-device source model and strategies for stable operation.} American Physical Society, Division of Plasma Physics 2024 Annual Meeting: Atlanta, GA. Section PP11.00050: Research in Support of ITER.
-    \item M. Pharr et al. \textit{Error Field Predictability and Consequences for ITER.} American Physical Society, Division of Plasma Physics 2023 Annual Meeting: Denver, Co. Section PP11.00050: Poster Session VI: MHD and Stability.
-    \item M. Pharr, F. Ebrahimi, \textit{A nonlocal Curvature-Driven Flow-Shear Instability in Low-Field Plasmas} Sherwood Fusion Theory 2023 Conference: Knoxville, TN.
-    \item M. Pharr et al. \textit{Error field source identification in early ITER plasmas.} American Physical Society, Division of Plasma Physics 2022 Annual Meeting: Spokane, Wa. Section PP11.00044: Poster Session VI: Diagnostics; Edge and Pedestal; Stability; Heating; Transport, Turbulence.
-    \item M. Pharr, F. Ebrahimi, E. Blackman, \textit{Large Scale Magnetic Field Growth and Stability in Hall-MHD Simulations of Quasi-Keplerian Flows.} American Physical Society, Division of Plasma Physics 2021 Annual Meeting: Pittsburgh, PA. Section UO06.00014: Astrophysical Turbulence and Dynamos.
+    \item {{\bf M. Pharr} et al., \textit{Resistive and kinetic implications for ITER error field correction}, 47th ITPEA MDC Meeting, Seoul, Republic of Korea (2026).}
+    \item {{\bf M. Pharr} et al., \textit{Resistive modifications to ideal error field sensitivity in tokamaks}, 30th Workshop on MHD Stability Control, San Diego, CA, USA (2026).}
+    \item {{\bf M. Pharr} et al., \textit{Resistive and kinetic modifications to ideal error field sensitivity in tokamaks}, US-Japan MHD Workshop, Toki, Japan (2026).}
+    \item {{\bf M. Pharr} et al., \textit{Quantifying the resonant drive for magnetic islands in perturbed ideal, resistive, and kinetic MHD equilibria}, 67th Annual Meeting of the APS Division of Plasma Physics, Long Beach, CA, USA (2025), \href{https://meetings.aps.org/Meeting/DPP25/Session/GO05.7}{abstract GO05.00007}.}
+    \item {{\bf M. Pharr} et al., \textit{Quantifying the resonant drive for magnetic islands in perturbed ideal, resistive, and kinetic MHD equilibria}, 29th US-Japan Joint Workshop on MHD Stability Control, Princeton, NJ, USA (2025).}
+    \item {{\bf M. Pharr} et al., \textit{Expected error fields in ITER: a full-device source model and strategies for stable operation}, ITER International Summer School, Aix-en-Provence, France (2025).}
+    \item {{\bf M. Pharr} et al., \textit{Expected error fields in ITER: a full-device source model and strategies for safe operation}, 66th Annual Meeting of the APS Division of Plasma Physics, Atlanta, GA, USA (2024), \href{https://meetings.aps.org/Meeting/DPP24/Session/UO06.14}{abstract UO06.00014}.}
+    \item {{\bf M. Pharr} et al., \textit{Error field predictability and consequences for ITER}, 65th Annual Meeting of the APS Division of Plasma Physics, Denver, CO, USA (2023), \href{https://meetings.aps.org/Meeting/DPP23/Session/PP11.50}{abstract PP11.00050}.}
+    \item {{\bf M. Pharr} and F. Ebrahimi, \textit{A nonlocal curvature-driven flow-shear instability in low-field plasmas}, Sherwood Fusion Theory Conference, Knoxville, TN, USA (2023).}
+    \item {{\bf M. Pharr} et al., \textit{Error field source identification in early ITER plasmas}, 64th Annual Meeting of the APS Division of Plasma Physics, Spokane, WA, USA (2022), \href{https://meetings.aps.org/Meeting/DPP22/Session/PP11.43}{abstract PP11.00043}.}
+    \item {{\bf M. Pharr}, F. Ebrahimi, and E. Blackman, \textit{Large scale magnetic field growth and stability in Hall-MHD simulations of quasi-Keplerian flows}, 63rd Annual Meeting of the APS Division of Plasma Physics, Pittsburgh, PA, USA (2021), \href{https://meetings.aps.org/Meeting/DPP21/Session/BO06.3}{abstract BO06.00003}.}
 \end{itemize}
 
 \section{HONORS \& AWARDS} 
@@ -133,7 +157,7 @@ Supervisors: Dr. Peter Kramer, Dr. Scott Forth.
 \vspace{-0.4cm}
 
 $\Sigma \Pi \Sigma$, Undergraduate Physics Honor Society \hfill 2021 \\
-Honorable Mention for Research Paper,       Mathematical Competition in Modeling \hfill 2020 \\
+Honorable Mention for Research Paper, Mathematical Contest in Modeling \hfill 2020 \\
 Rensselaer Archimedian Society (4.0/4.0 GPA award)\hfill 2019 \\
 Rensselaer Leadership Award \hfill 2018
 
@@ -142,7 +166,7 @@ Rensselaer Leadership Award \hfill 2018
 
 \vspace{0.2cm}\wideline
     
-    \textit{Graduate Teaching Assistant, Intro Physics Lab Sequence} \hfill Fall 2022 - Present \\
+    \textit{Adjunct Instructor, Intro Physics Lab Sequence} \hfill Fall 2022 -- Spring 2026 \\
     Barnard College of Columbia University, Physics and Astronomy, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Teach introductory mechanics lab, grade lab reports.
@@ -153,7 +177,7 @@ Rensselaer Leadership Award \hfill 2018
     Columbia University, Applied Physics and Applied Mathematics, New York, NY
     \vspace{-0.08cm}
 
-    \textit{Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 - Spring 2022 \\
+    \textit{Graduate Teaching Assistant, Complex Analysis/Linear Algebra} \hfill Fall 2021 -- Spring 2022 \\
     Columbia University, Applied Physics and Applied Mathematics, New York, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Hold office hours for upper undergraduate/introductory graduate courses on Complex Analysis and Linear Algebra.
@@ -161,7 +185,7 @@ Rensselaer Leadership Award \hfill 2018
     % \end{itemize}    
     \vspace{-0.08cm}
 
-    \textit{Undergraduate Facilitator} \hfill Fall 2019 - Summer 2020, Spring 2021 \\
+    \textit{Undergraduate Facilitator} \hfill Fall 2019 -- Summer 2020, Spring 2021 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Facilitate Honors Physics I/II Lab, Electromagnetic Theory, Intro to Quantum Mech.
@@ -178,15 +202,15 @@ Rensselaer Leadership Award \hfill 2018
     % \end{itemize}
     \vspace{-0.08cm}
 
-    \textit{ALAC Introductory Physics Tutor} \hfill Fall 2019 - Spring 2020 \\
+    \textit{ALAC Introductory Physics Tutor} \hfill Fall 2019 -- Spring 2020 \\
     Rensselaer Polytechnic Institute, Physics Department, Troy, NY
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Tutor Physics I, II, Honors Physics I, II students in private and group settings for Rensselaer's Learning Assistance Center.
     % \end{itemize}
     \vspace{-0.08cm}
 
-    \textit{Private Tutor, Math/Physics} \hfill Spring 2018 - Spring 2020 \\
-    Self-employed. Took 2-4 hours per week of university-level tutoring.
+    \textit{Private Tutor, Math/Physics} \hfill Spring 2018 -- Spring 2020 \\
+    Self-employed. Provided 2--4 hours per week of university-level tutoring.
     % \begin{itemize}  \itemsep -2pt %reduce space between items
     %     \item Synthesize lessons, example problems, and meet with math, computer science, and physics students regularly to assist with coursework and test preparation.
     % \end{itemize}
@@ -194,21 +218,20 @@ Rensselaer Leadership Award \hfill 2018
 \section{SKILLS}
 \vspace{0.2cm}\wideline
 \textit{Languages and tools:}\\
-Python, Julia, Fortran 77/90/95, Matlab, Linux, git, \LaTeX, OpenMP, MPI parallel computing\\
+Python, Julia, Fortran 77/90/95, MATLAB, Linux, Git, \LaTeX, OpenMP, MPI\\
 Amazon Web Services, Oracle Cloud, Google Cloud \\
 Fortran and C++ graphical / memory debugging tools \\
 Linear/nonlinear MHD simulation and analysis with DCON, GPEC, NIMROD
 
-\textit{General/Practical Skills:}\\
-High Performance Computing \\
-IT and Computer Networking \\
-Application of Neural Networks and Machine Learning to Physics Problems\\
-Use of vacuum technology and other plasma physics related lab equipment\\
-Use of high voltage lab equipment\\
-Native English, B2 French%, Basic Italian, Mandarin\\
- 
+\textit{General/practical skills:}\\
+High-performance computing \\
+Analytic and numerical modeling of plasmas \\
+Application of neural networks and machine learning to physics problems\\
+Use of vacuum technology and other plasma-physics lab equipment\\
+Use of high-voltage lab equipment\\
+IT and computer networking \\
+Native English, B1 French, introductory Italian, introductory Mandarin
 \end{resume} 
-
 \end{document}
 
 
